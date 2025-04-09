@@ -1,5 +1,62 @@
 {
-    "window.autoDetectColorScheme": true,
-    "workbench.preferredLightColorTheme": "Default Light+",
-    "workbench.preferredDarkColorTheme": "Default Dark+"
+  // 🎨 Active le changement automatique de thème clair/sombre selon le système
+  "window.autoDetectColorScheme": true,
+
+  // 🎨 Définition du thème clair et sombre que VS Code doit utiliser
+  "workbench.preferredLightColorTheme": "Default Light+",
+  "workbench.preferredDarkColorTheme": "Default Dark+",
+
+  // ✅ Définit Prettier comme formateur par défaut pour TOUS les fichiers
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 💾 Active le formatage automatique à chaque sauvegarde (Cmd+S)
+  "editor.formatOnSave": true,
+
+  // 📄 Active Prettier pour les fichiers JavaScript (.js)
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // 📄 Active Prettier pour les fichiers TypeScript (.ts)
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // ⚛️ Active Prettier pour les fichiers React en JavaScript (.jsx)
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // ⚛️ Active Prettier pour les fichiers React en TypeScript (.tsx)
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // 🔧 Active Prettier pour les fichiers JSON (.json), souvent présents dans Next.js (package.json, tsconfig.json…)
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // 🧱 Pour les fichiers HTML si tu en as (ex : dans des emails, ou dans `public/`)
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // 🎨 Pour les fichiers CSS (.css)
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // 🎨 Pour les fichiers SCSS (.scss), si tu utilises Sass dans ton projet
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
 }
