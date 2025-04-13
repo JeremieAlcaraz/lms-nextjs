@@ -7,6 +7,7 @@ import { BookMarkedIcon, BookOpen } from "lucide-react"; // ou autre bibliothèq
 import Link from "next/link"; // ou 'react-router-dom' selon ton framework
 import { SignedIn, UserButton, SignedOut, SignInButton } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
+import SearchInput from "./SearchInput";
 
 function Header() {
   return (
@@ -25,6 +26,9 @@ function Header() {
               </span>
             </Link>
           </div>
+
+          {/* Search Input */}
+          <SearchInput />
 
           {/* Right container -> navbar */}
           <div className="flex items-center space-x-2 md:space-x-4">
